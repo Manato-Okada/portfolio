@@ -1,29 +1,30 @@
 <template>
-    <div id="skillSection">
-        <p class="skillTitle">Skill set</p>
-        <p class="skillExplain">スキルをまとめました。</p>
-        <p class="gitHublabel">GitHub:<a href="https://github.com/Manato-Okada/portfolio"></a></p>
-    </div>
+  <div id="skillSection">
+    <p class="skillTitle">
+      Skill set
+    </p>
+    <p class="skillExplain">
+      スキルをまとめました。
+    </p>
+    <p class="gitHublabel">
+      GitHub:<a href="https://github.com/Manato-Okada/portfolio" />
+    </p>
+  </div>
 </template>
 
-<script>
-</script>
+
 
 <style scoped>
-  #skillSection{
-    background-color: #ffffff;
+  #skillSection {
+    background-color: #fff;
     width: 100%;
-    }
+  }
 
-  .skillTitle{
+  .skillTitle {
     color: #20879f;
-    font-family: "Noto Sans";
     font-weight: bold;
     font-size: 18px;
-    text-shadow: 1px 1px #ffffff
-    }
-  
-
-    
+    text-shadow: 1px 1px #fff;
+  }
 
 </style>
