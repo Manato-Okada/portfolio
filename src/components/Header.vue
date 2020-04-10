@@ -1,8 +1,22 @@
 <template>
   <div id="headerSection">
-    <button @click="toggle" class="btn btn-success">toggle</button>
-    <Drawer @close="toggle" align="left" :closeable="true">
-      <p v-if="open">content here</p>
+    <button
+      class="btn"
+      @click="toggle"
+    >
+      <img
+        id="headerButton"
+        src="../assets/img/humbergerMenu.png"
+      >
+    </button>
+    <Drawer
+      align="left"
+      :closeable="true"
+      @close="toggle"
+    >
+      <p v-if="open">
+        content here
+      </p>
     </Drawer>
   </div>
 </template>
@@ -17,7 +31,7 @@
     data() {
     return {
       open: false
-      } 
+      }
     } ,
   methods: {
     toggle() {
@@ -29,14 +43,24 @@
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
-"~bootstrap/scss/buttons";
+  "~bootstrap/scss/buttons";
 </style>
 
 
 
 <style scoped>
   #headerSection {
-  background-color: #F3F3F3;
-  width:100%;
+    background-color: #f3f3f3;
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
+
+  #headerButton {
+    font-family: 'Avenir', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: auto;
   }
 </style>
