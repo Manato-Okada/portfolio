@@ -16,6 +16,7 @@
   #aboutSection {
     background-color: #f5f5f5;
     width: 100%;
+    height: auto;
   }
 
   .aboutTitle {
@@ -23,12 +24,14 @@
     font-weight: bold;
     font-size: 18px;
     text-shadow: 1px 1px #fff;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
   .aboutExplain {
     color: #707070;
     font-size: 12px;
     overflow-wrap: normal;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
 </style>

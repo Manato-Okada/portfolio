@@ -6,7 +6,10 @@
     <p class="companyName">
       Seattleconsulting
     </p>
-    <img src="https://drive.google.com/file/d/1ilnBoWam9Zwb9lufYQdPjRoYd7KuWDoW/view?usp=sharing">
+    <img
+      id="ProfilePicture"
+      src="../assets/img/ProfilePicture.png"
+    >
   </div>
 </template>
 
@@ -18,17 +21,25 @@
     background: linear-gradient(to bottom, #80e1f7, #06c1e6);
   }
 
+  #ProfilePicture {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+  }
+
   .userName {
-    background-color: #fff;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     text-shadow: 1px 1px #fff;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
   .companyName {
-    background-color: #fff;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 
 </style>

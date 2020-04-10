@@ -7,7 +7,7 @@
       スキルをまとめました。
     </p>
     <p class="gitHublabel">
-      GitHub:<a href="https://github.com/Manato-Okada/portfolio" />
+      <a href="https://github.com/Manato-Okada/portfolio">https://github.com/Manato-Okada/portfolio</a>
     </p>
   </div>
 </template>

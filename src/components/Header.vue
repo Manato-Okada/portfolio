@@ -1,10 +1,13 @@
 <template>
   <div id="headerSection">
     <button
-      class="btn btn-success"
+      class="btn"
       @click="toggle"
     >
-      toggle
+      <img
+        id="headerButton"
+        src="../assets/img/humbergerMenu.png"
+      >
     </button>
     <Drawer
       align="left"
@@ -28,7 +31,7 @@
     data() {
     return {
       open: false
-      } 
+      }
     } ,
   methods: {
     toggle() {
@@ -49,5 +52,15 @@
   #headerSection {
     background-color: #f3f3f3;
     width: 100%;
+    height: auto;
+    text-align: left;
+  }
+
+  #headerButton {
+    font-family: 'Avenir', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: auto;
   }
 </style>
