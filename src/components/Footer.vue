@@ -1,15 +1,13 @@
 <template>
   <div id="footerSection">
     <a
-      href="#"
+      href="#Header"
       @click="clickSmoothScroll()"
     > <img
       class="footerScrol"
       src="../assets/img/footerScrol.png"
     ></a>
-    <div class="hoge">
-      飛び先
-    </div>
+
     <div class="footerCopyright">
       ©Seattleconsulting
     </div>
@@ -23,7 +21,7 @@ export default {
     clickSmoothScroll () {
       event.preventDefault()
       this.$SmoothScroll(
-        document.querySelector('#hoge'),
+        document.querySelector('#headerSection'),
         400,
         null,
         null,

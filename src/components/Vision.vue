@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <p class="Title">
+  <div id="visionSection">
+    <div id="visionTitle">
       Vision
-    </p>
+    </div>
   </div>
 </template>
 

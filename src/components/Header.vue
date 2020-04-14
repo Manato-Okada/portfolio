@@ -15,17 +15,19 @@
       @close="toggle"
     >
       <p v-if="open">
-        content here
+        <Menu />
+        content
       </p>
     </Drawer>
   </div>
 </template>
 
 <script>
-  import Drawer from 'vue-simple-drawer'
+  import Menu from './Menu';
+  import Drawer from 'vue-simple-drawer';
   export default {
-      name: 'App',
   components: {
+      Menu,
       Drawer
     },
     data() {

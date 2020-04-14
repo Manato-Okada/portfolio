@@ -6,7 +6,6 @@
     <Skill />
     <Vision />
     <Footer />
-    <Menu />
   </div>
 </template>
 
@@ -21,15 +20,17 @@ import Footer from './components/Footer.vue'
 
 
 
+
+
 export default {
-  name: 'App',
   components: {
     Header,
     Main,
     About,
     Skill,
     Vision,
-    Footer
+    Footer,
+
   },
 }
 </script>
