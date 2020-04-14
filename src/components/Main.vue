@@ -3,6 +3,7 @@
     <p class="userName">
       M.Okada
     </p>
+    <hr>
     <p class="companyName">
       Seattleconsulting
     </p>
