@@ -5,7 +5,7 @@
     </div>
 
     <div id="skillExplain">
-      スキルをまとめました。
+      学生時代はプログラミング未経験。故に今回はこのポートフォリオ実装と内定者課題を通しての自己評価となります。まだスキルは0に等しいですがこれらの言語を広く身につけていきたいです。
     </div>
     <label id="gitHublabel">
       <a
@@ -74,13 +74,22 @@
         <li>Firebase</li>
       </ul>
     </div>
-    <div v-if="isFrontActive">
+    <div
+      v-if="isFrontActive"
+      class="Chart"
+    >
       <FrontChart />
     </div>
-    <div v-if="isBackActive">
+    <div
+      v-if="isBackActive"
+      class="Chart"
+    >
       <BackChart />
     </div>
-    <div v-if="isDevOpsActive">
+    <div
+      v-if="isDevOpsActive"
+      class="Chart"
+    >
       <DevChart />
     </div>
   </div>
@@ -139,6 +148,11 @@
   font-weight: bold;
   font-size: 18px;
   text-shadow: 1px 1px #fff;
+  padding-top: 10px;
+}
+
+#skillExplain {
+  word-break: keep-all;
 }
 
 li {
@@ -150,16 +164,28 @@ li {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.front-change li {
+  background-color: #ff7d6e;
+}
+
+.back-change li {
+  background-color: #00bcd4;
+}
+
+.dev-change li {
+  background-color: thistle;
+}
+
 #front {
-  color: #ff7d6e;
+  color: red;
 }
 
 #back {
-  color: #00bcd4;
+  color: darkblue;
 }
 
 #DevOps {
-  color: #5d627b;
+  color: purple;
 }
 
 #front-end {
@@ -168,7 +194,7 @@ li {
 }
 
 #front-end li {
-  color: #ff7d6e;
+  color: red;
   display: inline-block;
 }
 
@@ -178,7 +204,7 @@ li {
 }
 
 #back-end li {
-  color: #00bcd4;
+  color: darkblue;
   display: inline-block;
 }
 
@@ -188,13 +214,17 @@ li {
 }
 
 #devops li {
-  color: #5d627b;
+  color: purple;
   display: inline-block;
 }
 
 #skillList {
   display: block;
   width: auto;
+}
+
+.Chart {
+  padding-top: 20px;
 }
 
 </style>

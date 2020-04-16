@@ -9,14 +9,17 @@
       <label
         id="nav-open"
         for="nav-input"
-      ><span /></label>
+      ><span @click="open" /></label>
       <label
         id="nav-close"
         class="nav-unshown"
         for="nav-input"
       />
-      <div id="nav-content">
-        <Menu />
+      <div
+        id="nav-content"
+        :class="{'nav-unshown' : isActive}"
+      >
+        <Menu @sample="closeMenu" />
       </div>
     </div>
   </div>
@@ -28,6 +31,19 @@
   export default {
       components: {
       Menu
+      },
+      data(){
+        return{
+          isActive:false
+        }
+      },
+      methods:{
+        closeMenu(){
+        this.isActive=true
+        },
+        open(){
+          this.isActive=false
+        }
       }
 
   }
@@ -98,7 +114,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
