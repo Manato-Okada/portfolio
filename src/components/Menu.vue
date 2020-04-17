@@ -15,10 +15,30 @@
 
     <div class="drawerMenuSection">
       <ul>
-        <li><a href="#headerSection">Home</a></li>
-        <li><a href="#aboutSection">AboutMe</a></li>
-        <li><a href="#skillSection">Skillsets</a></li>
-        <li><a href="#visionSection">Vision</a></li>
+        <li>
+          <a
+            href="#headerSection"
+            @click="close"
+          >Home</a>
+        </li>
+        <li>
+          <a
+            href="#aboutSection"
+            @click="close"
+          >AboutMe</a>
+        </li>
+        <li>
+          <a
+            href="#skillSection"
+            @click="close"
+          >Skillsets</a>
+        </li>
+        <li>
+          <a
+            href="#visionSection"
+            @click="close"
+          >Vision</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -26,6 +46,11 @@
 
 <script>
 export default {
+  methods:{
+    close(){
+      this.$emit('sample')
+    }
+  }
 
 }
 </script>
@@ -43,7 +68,6 @@ export default {
     background-color: #fff;
     width: 100%;
     height: auto;
-    border-bottom: 1px solid gray;
   }
 
   li {

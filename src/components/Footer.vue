@@ -36,6 +36,8 @@ export default {
 
 #footerSection {
   background: linear-gradient(#80e1f7, #06c1e6);
+  height: auto;
+  display: block;
 }
 
 .footerCopyright {
@@ -48,9 +50,9 @@ export default {
 }
 
 .footerScrol {
-  top: −70px;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   position: relative;
+  top: −10px;
 }
 </style>

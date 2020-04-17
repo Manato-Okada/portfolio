@@ -4,8 +4,7 @@
       Vision
     </div>
     <div id="visionExplain">
-      様々な業界と連携して多角的に世の中にサービスを提供していきたいです。
-      そのためにオールラウンドなスキルを身につけ、特に興味を持った分野を専門的に学んでいきたいです。
+      様々な業界と連携して多角的に世の中にサービスを提供していきたいです。そのためにまずはオールラウンドなスキルを身につけることが短期的な目標です。長期的にはAI開発など社会に大きな影響を与えられる事業に携わりたいです。
     </div>
   </div>
 </template>
@@ -15,6 +14,7 @@
     background-color: #f5f5f5;
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
   }
 
   #visionTitle {
@@ -22,14 +22,15 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     font-size: 18px;
+    padding-top: 10px;
   }
 
   #visionExplain {
     color: #707070;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px;
-    overflow-wrap: normal;
+    font-size: 14px;
     padding: 10px 60px;
+    word-break: keep-all;
   }
 </style>
 

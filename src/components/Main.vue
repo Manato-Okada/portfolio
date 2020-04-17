@@ -34,6 +34,7 @@
     font-size: 18px;
     text-shadow: 1px 1px #fff;
     font-family: 'Noto Sans JP', sans-serif;
+    padding-top: 10px;
   }
 
   .companyName {
