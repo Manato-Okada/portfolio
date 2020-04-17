@@ -31,10 +31,11 @@ export default {
       options: {
         scale: {
           ticks:{
-      beginAtZero:true,
-      max:5,
-      min:0
-    }
+            beginAtZero:true,
+            max:5,
+            min:0,
+            stepSize: 1
+          }
         },
         legend:{
           display:false,
