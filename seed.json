@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "user_id": "A0001",
+      "user_name": "chiyo",
+      "age": 9
+    },
+    {
+      "user_id": "A0002",
+      "user_name": "eru",
+      "age": 5
+    },
+    {
+      "user_id": "A0003",
+      "user_name": "otome",
+      "age": 13
+    }
+  ]
+}
