@@ -1,17 +1,21 @@
 <script>
 import { Radar } from '../../../portfolio/node_modules/vue-chartjs';
-
+import store from '../store'
+import skills from '../../skills.json'
 export default {
   name: 'Chart',
   extends: Radar,
+  store,
+  skills ,
+
   data () {
     return {
       data: {
-        labels: ['HTML', 'CSS', 'Javascript', 'SCSS', 'Vue'],
+        name: ['HTML', 'CSS', 'Javascript', 'SCSS', 'Vue'],
         datasets: [
           {
             label: 'Bar Dataset',
-            data: [3, 4, 2, 1, 2],
+            score: [3, 4, 2, 1, 2],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
             ],

@@ -1,17 +1,20 @@
 <script>
 import { Radar } from '../../../portfolio/node_modules/vue-chartjs';
-
+import store from '../store'
+import skills from '../../skills.json'
 export default {
   name: 'Chart',
   extends: Radar,
+  store,
+  skills ,
   data () {
     return {
       data: {
-        labels: ['Linux', 'Node', 'Git', 'GitHub', 'Firebase'],
+        name: ['Linux', 'Node', 'Git', 'GitHub', 'Firebase'],
         datasets: [
           {
             label: 'Bar Dataset',
-            data: [3, 2, 3, 4, 2],
+            score: [3, 2, 3, 4, 2],
             backgroundColor: [
               'rgba(191, 63, 187, 0.2)',
             ],
@@ -33,7 +36,8 @@ export default {
           ticks:{
       beginAtZero:true,
       max:5,
-      min:0
+      min:0,
+      stepSize: 1
     }
         },
         legend:{
