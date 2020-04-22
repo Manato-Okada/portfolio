@@ -10,11 +10,11 @@ export default {
   data () {
     return {
       data: {
-        name: ['Java', 'Ruby', 'RubyOnRails', 'MySQL'],
+        label: [],
         datasets: [
           {
             label: 'Bar Dataset',
-            score: [3, 2, 2, 1],
+            data: [],
             backgroundColor: [
               'rgba(63, 123, 191, 0.2)',
             ],
@@ -46,7 +46,18 @@ export default {
     }
   },
   mounted () {
-    this.renderChart(this.data, this.options)
-  }
+ this.getSkill()
+ this.renderChart(this.data, this.options)
+ },
+ /*計算式何をするのか*/
+ methods:{
+ getSkill(){
+ const names = this.$store.getters.skillName(1)
+ this.data.labels = names
+ const score = this.$store.getters.skillScore(1)
+ this.data.datasets[0].data = score
+ }
+ }
+
 }
 </script>
