@@ -75,20 +75,20 @@
       </ul>
     </div>
     <div
-      v-if="isFrontActive"
-      class="Chart"
+      v-if="isFrontActive && loaded"
+      class="chart"
     >
       <FrontChart />
     </div>
     <div
       v-if="isBackActive"
-      class="Chart"
+      class="chart"
     >
       <BackChart />
     </div>
     <div
       v-if="isDevOpsActive"
-      class="Chart"
+      class="chart"
     >
       <DevChart />
     </div>
@@ -124,6 +124,10 @@
      isDevOpsActive() {
        return this.currentChart=='devOps';
      },
+     loaded(){
+       return this.$store.state.loaded
+     }
+
 
    },
    methods: {
@@ -225,7 +229,7 @@ li {
   text-align: center;
 }
 
-.Chart {
+.chart {
   width: 50%;
   height: auto;
   margin: 20px auto;
