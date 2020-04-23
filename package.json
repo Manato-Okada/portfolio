@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --mode local",
     "build": "vue-cli-service build",
+    "build:production": "vue-cli-service build --mode production",
+    "build:development": "vue-cli-service build --mode development.build",
     "lint": "vue-cli-service lint",
     "lint-staged": "lint-staged",
     "stylelint": "stylelint \"src/**/*.vue\" --fix"
@@ -78,4 +80,5 @@
     "last 2 versions",
     "not dead"
   ]
+
 }
