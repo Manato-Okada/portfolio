@@ -24,14 +24,14 @@
 
   #ProfilePicture {
     border-radius: 50%;
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
   }
 
   .userName {
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 26px;
     text-shadow: 1px 1px #fff;
     font-family: 'Noto Sans JP', sans-serif;
     padding-top: 10px;
@@ -40,7 +40,7 @@
   .companyName {
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Noto Sans JP', sans-serif;
   }
 

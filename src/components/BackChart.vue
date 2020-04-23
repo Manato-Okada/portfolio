@@ -1,17 +1,20 @@
 <script>
 import { Radar } from '../../../portfolio/node_modules/vue-chartjs';
-
+import store from '../store'
+import skills from '../../skills.json'
 export default {
   name: 'Chart',
   extends: Radar,
+  store,
+  skills ,
   data () {
     return {
       data: {
-        labels: ['Java', 'Ruby', 'RubyOnRails', 'MySQL'],
+        label: [],
         datasets: [
           {
             label: 'Bar Dataset',
-            data: [3, 2, 2, 1],
+            data: [],
             backgroundColor: [
               'rgba(63, 123, 191, 0.2)',
             ],
@@ -32,7 +35,8 @@ export default {
           ticks:{
       beginAtZero:true,
       max:5,
-      min:0
+      min:0,
+      stepSize: 1
     }
         },
         legend:{
@@ -42,7 +46,18 @@ export default {
     }
   },
   mounted () {
-    this.renderChart(this.data, this.options)
-  }
+ this.getSkill()
+ this.renderChart(this.data, this.options)
+ },
+ /*計算式何をするのか*/
+ methods:{
+ getSkill(){
+ const names = this.$store.getters.skillName(1)
+ this.data.labels = names
+ const score = this.$store.getters.skillScore(1)
+ this.data.datasets[0].data = score
+ }
+ }
+
 }
 </script>

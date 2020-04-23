@@ -25,13 +25,13 @@
           <a
             href="#aboutSection"
             @click="close"
-          >AboutMe</a>
+          >About Me</a>
         </li>
         <li>
           <a
             href="#skillSection"
             @click="close"
-          >Skillsets</a>
+          >Skill Set</a>
         </li>
         <li>
           <a

@@ -14,14 +14,13 @@
     background-color: #f5f5f5;
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
   }
 
   #visionTitle {
     color: #20879f;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     padding-top: 10px;
   }
 

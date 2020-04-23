@@ -23,6 +23,8 @@ import Footer from './components/Footer.vue'
 
 
 export default {
+  name: 'App',
+
   components: {
     Header,
     Main,
@@ -31,8 +33,15 @@ export default {
     Vision,
     Footer,
 
+
   },
+  mounted(){
+    this.$store.dispatch('updataSkillCategories')
+  }
+
+
 }
+
 </script>
 
 <style lang="scss">

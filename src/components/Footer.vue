@@ -44,6 +44,7 @@ export default {
   color: #fff;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 18pt;
+  padding-bottom: 20px;
 
   /* 影のサイズ考える */
   text-shadow: -1px -2px 3px #808080;

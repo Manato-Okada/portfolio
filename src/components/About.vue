@@ -23,7 +23,7 @@
   .aboutTitle {
     color: #20879f;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     text-shadow: 1px 1px #fff;
     font-family: 'Noto Sans JP', sans-serif;
     padding-top: 10px;

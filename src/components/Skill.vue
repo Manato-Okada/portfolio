@@ -1,17 +1,17 @@
 <template>
   <div id="skillSection">
     <div id="skillTitle">
-      Skill set
+      Skill Set
     </div>
 
     <div id="skillExplain">
-      学生時代はプログラミング未経験。故に今回はこのポートフォリオ実装と内定者課題を通しての自己評価となります。まだスキルは0に等しいですがこれらの言語を広く身につけていきたいです。
+      学生時代はプログラミング未経験。故に今回はこのポートフォリオ実装と内定者課題を通しての自己評価となります。まだスキルは0に等しいですがこれらの言語を広く身につけていきます。
     </div>
     <label id="gitHublabel">
       <a
         id="gitHubLink"
         href="https://github.com/Manato-Okada/portfolio"
-      >https://github.com/Manato-Okada/portfolio</a>
+      >GitHub:https://github.com/Manato-Okada/portfolio</a>
     </label>
 
     <div id="skillCategories">
@@ -75,20 +75,20 @@
       </ul>
     </div>
     <div
-      v-if="isFrontActive"
-      class="Chart"
+      v-if="isFrontActive && loaded"
+      class="chart"
     >
       <FrontChart />
     </div>
     <div
       v-if="isBackActive"
-      class="Chart"
+      class="chart"
     >
       <BackChart />
     </div>
     <div
       v-if="isDevOpsActive"
-      class="Chart"
+      class="chart"
     >
       <DevChart />
     </div>
@@ -124,6 +124,10 @@
      isDevOpsActive() {
        return this.currentChart=='devOps';
      },
+     loaded(){
+       return this.$store.state.loaded
+     }
+
 
    },
    methods: {
@@ -146,13 +150,14 @@
 #skillTitle {
   color: #20879f;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   text-shadow: 1px 1px #fff;
   padding-top: 10px;
 }
 
 #skillExplain {
   word-break: keep-all;
+  font-size: 14px;
 }
 
 li {
@@ -165,7 +170,7 @@ li {
 }
 
 .front-change li {
-  background-color: #ff7d6e;
+  background-color: lightpink;
 }
 
 .back-change li {
@@ -221,10 +226,13 @@ li {
 #skillList {
   display: block;
   width: auto;
+  text-align: center;
 }
 
-.Chart {
-  padding-top: 20px;
+.chart {
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
 }
 
 </style>
