@@ -42,6 +42,7 @@
     font-weight: bold;
     font-size: 22px;
     font-family: 'Noto Sans JP', sans-serif;
+    padding-bottom: 14px;
   }
 
 </style>
